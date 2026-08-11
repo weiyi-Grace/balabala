@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>题目导入测试文档</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', SimSun, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.8;
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .question {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-left: 4px solid #22c55e;
+        }
+        .question-number {
+            font-weight: bold;
+            color: #333;
+        }
+        .question-type {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .options {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        .option {
+            margin: 5px 0;
+        }
+        .answer {
+            color: #22c55e;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .score {
+            color: #f59e0b;
+        }
+        .passage {
+            background: #f5f5f5;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-style: italic;
+        }
+        .download-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #22c55e;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        .download-btn:hover {
+            background: #16a34a;
+        }
+        .instructions {
+            background: #e0f2fe;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button class="download-btn" onclick="downloadDoc()">下载Word文档</button>
+    
+    <div class="instructions">
+        <h3>使用说明</h3>
+        <p>1. 点击下方"下载Word文档"按钮，将生成.docx文件</p>
+        <p>2. 或者复制下方所有内容，粘贴到Word文档中</p>
+        <p>3. 然后使用"题目导入"功能上传该Word文档进行测试</p>
+    </div>
+
+    <div id="content">
+        <h1>语文作业测试文档</h1>
+        
+        <div class="question">
+            <p><span class="question-number">1.</span> <span class="question-type">【选择】(5分)</span> 下列句子中，没有使用修辞手法的是（）</p>
+            <div class="options">
+                <div class="option">A. 春风像母亲的手抚摸着你</div>
+                <div class="option">B. 月亮升起来了</div>
+                <div class="option">C. 时间就是生命</div>
+                <div class="option">D. 书是人类进步的阶梯</div>
+            </div>
+            <p class="answer">答案: B</p>
+        </div>
+
+        <div class="question">
+            <p><span class="question-number">2.</span> <span class="question-type">【填空】(3分)</span> 《论语》中"学而时习之，________"强调了复习的重要性。</p>
+            <p class="answer">答案: 不亦说乎</p>
+        </div>
+
+        <div class="question">
+            <p><span class="question-number">3.</span> <span class="question-type">【判断】(2分)</span> 《背影》的作者是朱自清。</p>
+            <p class="answer">答案: 正确</p>
+        </div>
+
+        <div class="question">
+            <p><span class="question-number">4.</span> <span class="question-type">【阅读】(15分)</span> 阅读下面的文言文，完成后面的问题。</p>
+            <div class="passage">
+                《论语》选段：<br>
+                子曰："学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知而不愠，不亦君子乎？"
+            </div>
+            <p>问题：请解释"人不知而不愠"的含义，并谈谈你对这句话的理解。</p>
+            <p class="answer">答案: 别人不了解我，我却不生气。这体现了君子宽容大度、不计较个人得失的品格。理解：在日常生活中，我们应该学会宽容，不因为别人的误解而生气。</p>
+        </div>
+
+        <div class="question">
+            <p><span class="question-number">5.</span> <span class="question-type">【选择】(5分)</span> 下列加点字解释有误的一项是（）</p>
+            <div class="options">
+                <div class="option">A. 学而时习之（按时）</div>
+                <div class="option">B. 不亦说乎（喜悦）</div>
+                <div class="option">C. 人不知而不愠（恼怒）</div>
+                <div class="option">D. 不亦君子乎（品德高尚的人）</div>
+            </div>
+            <p class="answer">答案: A</p>
+        </div>
+
+        <div class="question">
+            <p><span class="question-number">6.</span> <span class="question-type">【填空】(4分)</span> 请默写《春晓》的前两句：________，________。</p>
+            <p class="answer">答案: 春眠不觉晓;处处闻啼鸟</p>
+        </div>
+
+        <div class="question">
+            <p><span class="question-number">7.</span> <span class="question-type">【判断】(2分)</span> "春风又绿江南岸"中的"绿"字是形容词用作动词。</p>
+            <p class="answer">答案: 正确</p>
+        </div>
+
+        <div class="question">
+            <p><span class="question-number">8.</span> <span class="question-type">【选择】(5分)</span> "但愿人长久，千里共婵娟"中的"婵娟"指的是（）</p>
+            <div class="options">
+                <div class="option">A. 美女</div>
+                <div class="option">B. 月亮</div>
+                <div class="option">C. 花朵</div>
+                <div class="option">D. 云彩</div>
+            </div>
+            <p class="answer">答案: B</p>
+        </div>
+
+        <div class="question">
+            <p><span class="question-number">9.</span> <span class="question-type">【填空】(3分)</span> 唐代诗人________被称为"诗仙"。</p>
+            <p class="answer">答案: 李白</p>
+        </div>
+
+        <div class="question">
+            <p><span class="question-number">10.</span> <span class="question-type">【阅读】(10分)</span> 阅读《背影》片段，回答问题。</p>
+            <div class="passage">
+                他用两手攀着上面，两脚再向上缩；他肥胖的身子向左微倾，显出努力的样子。这时我看见他的背影，我的泪很快地流下来了。
+            </div>
+            <p>问题：这段文字运用了哪些描写方法？表现了父亲怎样的形象？</p>
+            <p class="answer">答案: 动作描写。通过"攀""缩""倾"等动词，表现了父亲年老体胖、行动不便，但仍努力为我买橘子的深沉父爱。</p>
+        </div>
+    </div>
+
+    <script>
+        function downloadDoc() {
+            const content = document.getElementById('content').innerHTML;
+            const blob = new Blob(['<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8"><title>语文作业测试文档</title></head><body>' + content + '</body></html>'], {
+                type: 'application/msword'
+            });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = '语文作业测试文档.doc';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>
